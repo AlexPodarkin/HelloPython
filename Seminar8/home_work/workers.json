@@ -1,0 +1,20 @@
+[
+    {
+        "family": "Ivanov",
+        "name": "Ivan",
+        "numbers": "89270746545",
+        "solar": "30000"
+    },
+    {
+        "family": "Petrov",
+        "name": "Petr",
+        "numbers": "89270746545",
+        "solar": "40000"
+    },
+    {
+        "family": "Sidorov",
+        "name": "Sidor",
+        "numbers": "89270746545",
+        "solar": "50000"
+    }
+]
