@@ -54,7 +54,7 @@ def search_cont():
             for line in file:
                 if family in line:
                     print("---"*22)
-                    print('Фамилия \t\t Имя       \t\t Номер_Телефона')
+                    print('Фамилия \t\t Имя       \t\t Номер Телефона')
                     print("---"*22)
                     print('\t\t\t'.join(line.split(',')))
                     count = count + 1
