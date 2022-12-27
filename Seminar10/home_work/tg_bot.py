@@ -6,19 +6,15 @@ from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 from button import kb_client
 
-
-bot = Bot(token=tg_bot_token)
+bot = Bot(tg_bot_token)
 dp = Dispatcher(bot)
 print('Go')
 @dp.message_handler(commands=['start'])
 async def start_command(message: types.Message):
-    await bot.send_sticker(message.from_user.id,sticker='CAACAgIAAxkBAAEG_p5jqCdl0LleIzqkLgvSYOKXDRgW-wACWyoAAiy9cUgb94vA1Xex2CwE')
+    await bot.send_sticker(message.from_user.id,'CAACAgIAAxkBAAEG_p5jqCdl0LleIzqkLgvSYOKXDRgW-wACWyoAAiy9cUgb94vA1Xex2CwE')
     await message.reply('\U00002705 Пришли мне название  города на Английском\n'
     '\U00002328Ввод любого города можно осуществить с клавиатуры\n'
     '\U0001F447Или воспользоваться клавишами)', reply_markup=kb_client)
-
-    #'\U0001F449Ввод любого города можно осуществить с клавиатуры\n',
-    #'\U0001F447Или воспользоваться клавишами\U0001F600')
 
 
 @dp.message_handler()

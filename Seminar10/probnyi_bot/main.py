@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('5629640823:AAGNiW-uQuWHzZibfwWL0IQ26uEYoitJ8VI')
+bot = telebot.TeleBot('YOU TOKKEN TELEGRAMM')
 
 
 @bot.message_handler(commands=['start'])  # команда старт
@@ -26,7 +26,7 @@ def get_user_text(message):
         def website(message):
             knopka = types.InlineKeyboardMarkup()
             knopka.add(types.InlineKeyboardButton(
-                'Посетить ВК', url='https://vk.com/andr.podarkin'))
+                'Посетить ВК', url='https://vk.com'))
             bot.send_message(message.chat.id, 'Следуй', reply_markup=knopka)
         website(message)
     elif message.text == 'Кнопки':

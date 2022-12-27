@@ -6,7 +6,7 @@ import bot_commands as bot
 
 
 
-app = ApplicationBuilder().token("5629640823:AAGNiW-uQuWHzZibfwWL0IQ26uEYoitJ8VI").build()
+app = ApplicationBuilder().token("YOU TOKKEN TELEGRAMM").build()
 
 app.add_handler(CommandHandler("hi", bot.hi_command))
 app.add_handler(CommandHandler("time", bot.time_command))
